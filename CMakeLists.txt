@@ -9,9 +9,6 @@ find_package(catkin REQUIRED COMPONENTS
    roscpp_serialization
 )
 
-# Build flags
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 ")
-
 catkin_package(
    INCLUDE_DIRS include
    LIBRARIES ros_type_introspection
