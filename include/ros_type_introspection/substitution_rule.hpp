@@ -151,7 +151,7 @@ namespace std {
     typedef RosIntrospection::SubstitutionRule argument_type;
     typedef std::size_t                        result_type;
 
-    result_type operator()(RosIntrospection::SubstitutionRule const& sr) const
+    result_type operator()(RosIntrospection::SubstitutionRule const& sr) const noexcept
     {
       return sr.hash();
     }

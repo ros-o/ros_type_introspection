@@ -179,7 +179,7 @@ namespace std {
     typedef RosIntrospection::ROSType argument_type;
     typedef std::size_t               result_type;
 
-    result_type operator()(RosIntrospection::ROSType const& type) const
+    result_type operator()(RosIntrospection::ROSType const& type) const noexcept
     {
       return type.hash();
     }
